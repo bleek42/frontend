@@ -1,0 +1,20 @@
+import { Component } from '@angular/core';
+// import { Users } from './dataHelper';
+@Component({
+  selector: 'app-root',
+  template:`
+	<!-- header -->
+	<context-provider
+		provide='Users'
+		[contextMap]='Users'
+	>
+		<app-header></app-header>
+	</context-provider>
+  `
+  // templateUrl: './app.component.html',
+  // styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'ourbytes';
+  Users = Users;
+}

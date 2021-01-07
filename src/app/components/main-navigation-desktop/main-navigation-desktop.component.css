@@ -1,0 +1,143 @@
+#main-navigation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto 0 auto;
+    max-width: 991px;
+    list-style: none;
+    padding: 0;
+}
+
+#main-navigation li{
+    flex: 1;
+    cursor: pointer;
+}
+
+.main-navigation-button{
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/* Desktop CSS */
+@media(min-width:361px){
+    .main-navigation-button{
+        height: 40px;
+        width: 40px;
+    }
+}
+
+/* Button default and rollover images */
+
+#main-navigation-button-user{
+    background-image: url('../../../assets/images/ui/main-navigation/User.png');
+}
+#main-navigation-button-user:hover{
+    background-image: url('../../../assets/images/ui/main-navigation/User-r.png');
+}
+
+#main-navigation-button-search{
+    background-image: url('../../../assets/images/ui/main-navigation/Search.png');
+}
+#main-navigation-button-search:hover{
+    background-image: url('../../../assets/images/ui/main-navigation/Search-r.png');
+}
+
+#main-navigation-button-post{
+    background-image: url('../../../assets/images/ui/main-navigation/Post.png');
+}
+#main-navigation-button-post:hover{
+    background-image: url('../../../assets/images/ui/main-navigation/Post-r.png');
+}
+
+#main-navigation-button-chat{
+    background-image: url('../../../assets/images/ui/main-navigation/Chat.png');
+}
+#main-navigation-button-chat:hover{
+    background-image: url('../../../assets/images/ui/main-navigation/Chat-r.png');
+}
+
+#main-navigation-button-friends{
+    background-image: url('../../../assets/images/ui/main-navigation/Friends.png');
+}
+#main-navigation-button-friends:hover{
+    background-image: url('../../../assets/images/ui/main-navigation/Friends-r.png');
+}
+
+#main-navigation-button-groups{
+    background-image: url('../../../assets/images/ui/main-navigation/Groups.png');
+}
+#main-navigation-button-groups:hover{
+    background-image: url('../../../assets/images/ui/main-navigation/Groups-r.png');
+}
+
+#main-navigation-button-shop{
+    background-image: url('../../../assets/images/ui/main-navigation/Shop.png');
+}
+#main-navigation-button-shop:hover{
+    background-image: url('../../../assets/images/ui/main-navigation/Shop-r.png');
+}
+
+#main-navigation-button-alerts{
+    background-image: url('../../../assets/images/ui/main-navigation/Alerts.png');
+}
+#main-navigation-button-alerts:hover{
+    background-image: url('../../../assets/images/ui/main-navigation/Alerts-r.png');
+}
+
+#main-navigation-button-settings{
+    background-image: url('../../../assets/images/ui/main-navigation/Settings.png');
+}
+#main-navigation-button-settings:hover{
+    background-image: url('../../../assets/images/ui/main-navigation/Settings-r.png');
+}
+
+#main-navigation-button-help{
+    background-image: url('../../../assets/images/ui/main-navigation/Help.png');
+}
+#main-navigation-button-help:hover{
+    background-image: url('../../../assets/images/ui/main-navigation/Help-r.png');
+}
+
+#main-navigation-button-donate{
+    background-image: url('../../../assets/images/ui/main-navigation/Donate.png');
+}
+#main-navigation-button-donate:hover{
+    background-image: url('../../../assets/images/ui/main-navigation/Donate-r.png');
+}
+
+/* Links */
+.main-navigation-link{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+/* Tool Tips */
+.main-navigation-button:hover .tooltiptext {
+    visibility: visible;
+}
+.tooltiptext {
+    z-index: 1;
+    visibility: hidden;
+    display: block;
+    margin-top: 5px;
+    background-color: #333;
+    border-radius: 6px;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+/* 
+Denotes c for component only link that doesn't point to any page.
+Used because the addition of the anchor tag offsets the margin displacing 
+the span tag vertically
+*/
+.tooltiptext-c{
+    margin-top: 45px;
+}

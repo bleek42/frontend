@@ -1,0 +1,7 @@
+<p>landing works!</p>
+<ng-template [ngIf]='!userData.loggedIn' [ngIfElse]='loggedIn'>
+	Please Log In.
+</ng-template>
+<ng-template #loggedIn>
+	Logged In!
+</ng-template>
